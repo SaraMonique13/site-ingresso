@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+header{
+    background-color: #4B1F79;
+    padding: 40px 10px;
+    color: white;
+}
+header h1{
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+}
+
+header nav li{
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a{
+    text-decoration: none;
+    color: white;
+
+}
+
+a:hover{
+    color: #BC89E6;
+    text-decoration: underline;
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container, section .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .container{
+    align-items: center;
+}
+
+section{
+    padding: 24px 0;
+}
+
+section h2, h3{
+    margin-bottom: 8px;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #4B1F79;
+}
+
+
+section p{
+    margin-bottom: 8px;
+}
+
+.cartaz{
+    margin-right: 32px;
+    height: 350px;
+}
+
+
+.dados{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+
+form input{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    height: 40px;
+    color: #4B1F79;
+}
+
+#buttom{
+    background-color: #4B1F79;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#buttom:hover{
+    background-color: #BC89E6;
+}
+
+input:focus{
+    outline-color: #4B1F79;
+}
+
+#ticket{
+    height: 320px;
+}
+
+.valores h2, .valores img{
+    margin-left: 150px;
+}
+
+footer{
+    background-color: #4B1F79;
+    color: white;
+    padding: 14px 0;
+    text-align: center;
+}
