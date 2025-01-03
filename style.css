@@ -81,6 +81,7 @@ header{
     padding: 40px 10px;
     color: white;
 }
+
 header h1{
     font-family: "Lobster", sans-serif;
     font-weight: 400;
@@ -154,7 +155,7 @@ section p{
 
 .dados{/*para as letras do titulo da div ficar centralizada*/
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .dados form {/*para as informações do form centralizar junto*/
