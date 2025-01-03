@@ -34,6 +34,43 @@
     }
 }
 
+/*O certo seria ter feito telas menores primeiro e somente depois criar um media query com as alterações dos outros tamanhos, porém aprendi depois de fazer esse site e só alterei para o que faltava*/
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Empilhar os itens */
+        padding: 10px;
+    }
+
+    header nav li {
+        display: block; /* Empilhar os itens do menu */
+        margin-bottom: 10px;
+    }
+
+    section h2, h3, p {
+        text-align: center;
+    }
+
+    form input {
+
+        
+        max-width: 450px; /* Limitar a largura máxima */
+        margin: 10px;
+        padding: 8px; /* Ajustar o preenchimento para não ficar muito pequeno */
+        box-sizing: border-box; /* Garantir que o padding seja contado na largura */
+    }
+
+    #ticket {
+        width: 100%; /* Ajuste para a largura */
+        max-height: 200px; /* Definir altura máxima */
+    }
+
+    .cartaz {
+        height: 200px;
+        margin-left: 32px;
+    }
+}
+
+
 
 header{
     background-color: #4B1F79;
@@ -122,31 +159,6 @@ section p{
     
 }
 
-/*O certo seria ter feito telas menores primeiro e somente depois criar um media query com as alterações dos outros tamanhos, porém aprendi depois de fazer esse site e só alterei para o que faltava*/
-@media screen and (max-width: 767px) {
-    .container {
-        flex-direction: column; /* Empilhar os itens */
-        padding: 0 10px;
-    }
-
-    header nav li {
-        display: block; /* Empilhar os itens do menu */
-        margin-bottom: 10px;
-    }
-
-    form input {
-        width: 90%; /* Preencher quase toda a largura */
-    }
-
-    #ticket {
-        height: 200px; /* Imagem menor */
-    }
-
-    .cartaz {
-        height: 200px;
-        margin: auto;
-    }
-}
 
 
 form input{
