@@ -10,6 +10,31 @@
     font-size: 18px;
 }
 
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        padding: 0 20px; /* Reduz margens */
+    }
+
+    header h1 {
+        font-size: 2.5em; /* Título ajustado para tablets */
+    }
+
+    form input {
+        width: 400px; /* Formulário mais estreito */
+    }
+
+    .cartaz {
+        height: 250px; /* Imagem menor para caber na tela */
+        margin-right: 16px;
+    }
+
+    #ticket {
+        height: 300px;
+    }
+}
+
+
 header{
     background-color: #4B1F79;
     padding: 40px 10px;
@@ -63,6 +88,7 @@ section h2, h3{
     margin-bottom: 8px;
     font-family: "Lobster", sans-serif;
     font-weight: 400;
+    font-size: 1.5em;/*aumentei o tamanho das letras*/
     font-style: normal;
     color: #4B1F79;
 }
@@ -77,19 +103,59 @@ section p{
     height: 350px;
 }
 
-
-.dados{
+#register .container,
+#valores .container{/*para o formulário e a imagem ficarem centralizados*/
     display: flex;
-    justify-content: space-between;
-    padding: 50px 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.dados{/*para as letras do titulo da div ficar centralizada*/
+    text-align: center;
+    margin-top: 50px;
+}
+
+.dados form {/*para as informações do form centralizar junto*/
+   
+    text-align: center;
+    
+}
+
+/*O certo seria ter feito telas menores primeiro e somente depois criar um media query com as alterações dos outros tamanhos, porém aprendi depois de fazer esse site e só alterei para o que faltava*/
+@media screen and (max-width: 767px) {
+    .container {
+        flex-direction: column; /* Empilhar os itens */
+        padding: 0 10px;
+    }
+
+    header nav li {
+        display: block; /* Empilhar os itens do menu */
+        margin-bottom: 10px;
+    }
+
+    form input {
+        width: 90%; /* Preencher quase toda a largura */
+    }
+
+    #ticket {
+        height: 200px; /* Imagem menor */
+    }
+
+    .cartaz {
+        height: 200px;
+        margin: auto;
+    }
 }
 
 
 form input{
     display: block;
-    width: 320px;
-    margin-bottom: 8px;
-    height: 40px;
+    margin: auto;
+    border-radius: 8px;
+    width: 500px;
+    margin-bottom: 15px;
+    height: 50px;
     color: #4B1F79;
 }
 
@@ -97,6 +163,8 @@ form input{
     background-color: #4B1F79;
     color: white;
     border: none;
+    border-radius: 8px;
+    margin-bottom: 50px;
     cursor: pointer;
 }
 #buttom:hover{
@@ -111,9 +179,6 @@ input:focus{
     height: 320px;
 }
 
-.valores h2, .valores img{
-    margin-left: 150px;
-}
 
 footer{
     background-color: #4B1F79;
