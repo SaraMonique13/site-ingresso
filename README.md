@@ -32,12 +32,9 @@ Este projeto simula um site de venda de ingressos para um show do BTS. Ele possu
 
 ## 📦 Estrutura de Pastas
 
-/
-├── index.html
-├── style.css
-├── imagens/
-│   ├── bts-yet-to-come-documentary.webp
-│   └── valores.png (mapa de ingressos)
+index.html
+style.css
+imagens
 
 ---
 
